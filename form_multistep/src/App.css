@@ -3,11 +3,11 @@
 }
 
 /*header*/
-.header {
+.hearder{
     text-align: center;
     margin-bottom: 2rem;
 }
-.header h2 {
+.hearder h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
@@ -47,5 +47,29 @@ textarea{
     border-radius: 3px;
     box-shadow: rgba(99,99,99,0.2) 0px 2px 8px 0;
 }
+textarea{
+    height: 120px;
+}
 
+/*Action*/
+.actions{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+.actions button{
+    font-size: .9rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #dfdfdf;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
 
+.actions button:hover{
+    background-color: #cfcfcf;
+}
