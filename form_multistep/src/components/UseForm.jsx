@@ -1,11 +1,17 @@
 import React from 'react'
 
-const UserForm =(data) => {
+const UserForm =(data, updateFieldHandler) => {
   return (
     <div>
       <div className="form-control">
         <label htmlFor="name">Nome:</label>
-        <input type="text" name="text"  id='name' placeholder='Digite seu nome' required/>
+        <input type="text" name="text"  id='name' placeholder='Digite seu nome' required value={data.name || ""}
+        onChange={(e)=> updateFieldHandler("name", e.target.value)}
+
+        
+        />
+        
+
 
       </div>
         <div className="form-control">
