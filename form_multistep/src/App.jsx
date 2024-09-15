@@ -8,13 +8,14 @@ import Steps from "./components/Steps";
 //Hooks
 import { useform } from "./Hooks/useForm";
 import { useState } from "react";
-import './App.css'
+
+import './App.css';
 
 const formTemplate = {
-  name:"",
-  email:"",
-  review:"",
-  comment:"",
+  name: "",
+  email: "",
+  review: "",
+  comment: "",
 };
 
 function App() {
@@ -24,8 +25,9 @@ function App() {
 
 
   const updateFieldHandler = (key,value) => {
+    
     setData((prev) => {
-      return{...prev, [key]: value}
+      return{...prev, [key]: value};
     });
   };
 
